@@ -1,0 +1,138 @@
+/*Applies rulings to entire document*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: white;
+    --secondary: purple;
+    --tertiary:rgb(223, 1, 223);
+}
+
+body {
+    background: var(--primary);
+    font-family: helvetica;
+    margin: 1em;
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--secondary);
+    height: 10vh;
+}
+
+/*This is for the "Name" header*/
+header h1 {
+    float: left;
+    padding: 20px 20px 20px 60px;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    display: flex;
+    position: flex;
+}
+
+/*Applies rulings to the aside element*/
+aside {
+    width: 18%;
+    padding-left: 15px;
+    margin-left: 0px;
+    float: left;
+}
+
+/*This is for the text within the aside section*/
+aside h2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 40px;
+    color: var(--secondary);
+    margin-bottom: 10rem;
+}
+
+/*This is for the border line to the right of the aside*/
+aside h2.vertical-right {
+    border-right: 3px solid;
+    color: var(--secondary);
+    height: 100px;
+}
+
+/*This is for the larger central banner image*/
+.card-banner{
+    margin: 15px 15px 0 22%;
+    display: flex;
+    width: 78%;
+    background-color: var(--tertiary);
+    height: 700px;
+    border: solid 3px;
+    border-color: var(--secondary);
+}
+
+article {
+    display: flex;
+    align-items: center;
+}
+
+/*This is for the 2x2 flex grid layout*/
+.card {
+    margin: 15px 15px 0 22%;
+    display: grid;
+    gap: 1em;
+    float: left;
+    margin-left: 4%;
+
+  }
+  
+/*This is for the flex rulings for the grid*/
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+  }
+
+/*This is for the flex rulings for the grid*/
+  .column {
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+    flex: 1;
+    background-color: var(--tertiary);
+    height: 100px;
+    width: 500%;
+    border: solid 3px;
+    border-color: var(--secondary);
+  }
+
+/*This is for the nav elements container*/
+nav ul {
+    display: flex;
+    float: inline-end;
+    text-align: center;
+    padding: 3.5vh 5%;
+    font-size: 17px;
+    list-style-type: none;
+  }
+
+/*This is for the actual nav text*/
+nav a {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 12px;
+    color: var(--primary);
+}
+
+/*This is for the image banner below the header*/
+.banner {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/shutterstock_1485294548.jpg");
+    background-size: cover;
+    background-position: center;
+}
