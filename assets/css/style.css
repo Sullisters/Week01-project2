@@ -72,45 +72,31 @@ aside h2.vertical-right {
 }
 
 article {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+#grid {
     display: flex;
-    align-items: center;
+    width: 800px;
+    height: 200px;
+    padding: 1rem;
+    justify-content: space-evenly;
 }
 
-/*This is for the 2x2 flex grid layout*/
-.card {
-    margin: 15px 15px 0 22%;
-    display: grid;
-    gap: 1em;
-    float: left;
-    margin-left: 4%;
-
+  .left-half {
+    background: var(--secondary);
   }
   
-/*This is for the flex rulings for the grid*/
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 1em;
+  .right-half {
+    background: var(--tertiary);
   }
 
-/*This is for the flex rulings for the grid*/
-  .column {
-    position: relative;
-    width: 49%;
-    display: inline-block;
-    vertical-align: middle;
-    flex: 1;
-    background-color: var(--tertiary);
-    height: 100px;
-    width: 500%;
-    border: solid 3px;
-    border-color: var(--secondary);
-  }
-
-/*This is for the nav elements container*/
-nav ul {
+/*This is for the nav and footer elements container*/
+nav ul, footer ul{
     display: flex;
     float: inline-end;
     text-align: center;
@@ -125,6 +111,14 @@ nav a {
     text-decoration: underline;
     padding: 12px;
     color: var(--primary);
+}
+
+/*This is for the actual footer text*/
+footer a {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 90px;
+    color: var(--tertiary);
 }
 
 /*This is for the image banner below the header*/
